@@ -1,0 +1,42 @@
+body {
+	background-image:url("../images/vintage-concrete.png");
+}
+
+
+h1 {
+	font-size:24px;
+}
+
+h2 {
+	text-align:center;
+	font-size:16px;
+}
+
+.jumbotron {
+	background-color:#33ffff;
+	border:solid;
+	border-color:black;
+	border-width:2px;
+}
+
+th {
+	font-weight:bold;
+}
+
+.panel {
+	border:solid;
+	border-color:black;
+	border-width:2px;
+}
+
+.panel-heading {
+	font-weight:bold;
+}
+
+.head {
+	background-color:#33ffff;
+}
+
+.btn {
+	background-color:#33ffff;
+}

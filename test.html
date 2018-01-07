@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Single AJAX</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
+        //key = 
+        var title = "Budweiser";
+       /* var queryURL = "http://api.brewerydb.com/v2/beers?key=79f4d7966b1dbe7c1504f6d2b51eb3ee&styleId=1&callback=JSON_CALLBACK";*/
+        var queryURL = "http://api.brewerydb.com/v2/styles?key=79f4d7966b1dbe7c1504f6d2b51eb3ee&callback=JSON_CALLBACK"; //all styles
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).done(function(response){
+            for (var i =0; i<response.data.length;i++)
+            {
+                console.log(response.data[i]);
+                console.log(response.data[i].name);
+                //console.log(response.data[i].shortName); //styles
+            }
+        });
+        // ---------------------------------------------------------
+    </script>
+</body>
+</html>
