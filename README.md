@@ -11,3 +11,6 @@ Frequency -- in minutes
 Code this app to calculate when the next train will arrive; this should be relative to the current time.
 Users from many different machines must be able to view same train times.
 Styling and theme are completely up to you. Get Creative!
+
+![trainschedule1](https://user-images.githubusercontent.com/30394249/38773254-0b7cb188-4005-11e8-8a1b-00f3e12b5ecc.jpg)
+
